@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTrading | Home</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo"><p><a href="withlogout.html">CarTrading</a></p></div>
+            <form class="search-box">
+                <input type="text" id="searchInput" placeholder="Search cars...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+        <div id="auth-container">
+            <ul class="nav-links">
+                <li><a href="/templates/cartrading/myAds.html">My Ads</a></li>
+                <li><a href="/templates/cartrading/profile.html">My Profile</a></li>
+                <li>
+                    <button onclick="location.href='/templates/index.html'" class="btn btn-primary" id="logoutButton">
+                        Log Out
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="hero">
+        <h1>Find Your Dream Car</h1>
+        <p>Explore thousands of listings from trusted sellers.</p>
+    </section>
+
+    <form class="filters">
+        <div class="filter-container">
+            <label for="yearInput">Year:</label>
+            <input type="number" id="yearInput" placeholder="Enter year...">
+
+            <label for="colorInput">Color:</label>
+            <input type="text" id="colorInput" placeholder="Enter color...">
+
+            <button type="submit" id="filterButton">Apply Filters</button>
+        </div>
+    </form>
+
+    <section class="car-catalog">
+        <h2>Available Cars</h2>
+        <div class="car-list">
+
+            <article class="car-item">
+                <img src="/images/BMW_m3.jpg" alt="Blue BMW M3 parked outside" loading="lazy">
+                <h3>BMW M3</h3>
+                <p><strong>Year:</strong> 2020</p>
+                <p><strong>Color:</strong> Blue</p>
+                <p><strong><a href="#">John Doe</a></strong> ⭐ 4.8</p>
+                <p>This BMW M3 is a high-performance sports sedan with a 3.0L turbocharged engine delivering 503 HP. It
+                    accelerates from 0-100 km/h in just 3.8 seconds. The luxurious interior features leather seats, an
+                    advanced infotainment system, and cutting-edge driving technology, making it the perfect combination
+                    of speed and comfort.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/audiA6.jpg" alt="Black Audi A6 luxury sedan" loading="lazy">
+                <h3>Audi A6</h3>
+                <p><strong>Year:</strong> 2019</p>
+                <p><strong>Color:</strong> Light grey</p>
+                <p><strong><a href="#">Alice Smith</a></strong> ⭐ 4.7</p>
+                <p>The Audi A6 is a premium sedan offering a 3.0L turbocharged engine with a smooth ride and excellent
+                    acceleration. Inside, you’ll find a spacious cabin with high-quality materials, a Bang & Olufsen
+                    sound system, and state-of-the-art driver assistance features for maximum safety and comfort.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/tesla_model_s.jpg" alt="Red Tesla Model S parked in city" loading="lazy">
+                <h3>Tesla Model S</h3>
+                <p><strong>Year:</strong> 2021</p>
+                <p><strong>Color:</strong> Grey</p>
+                <p><strong><a href="#">Michael Johnson</a></strong> ⭐ 3.7</p>
+                <p>The Tesla Model S is an all-electric luxury sedan with an impressive range of up to 650 km per
+                    charge. It features a futuristic interior, autopilot capabilities, and lightning-fast acceleration
+                    from 0-100 km/h in just 2.1 seconds, making it a top choice for those who value innovation.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/mercedes_c_class.jpg" alt="Mercedes-Benz C-Class" loading="lazy">
+                <h3>Mercedes-Benz C-Class</h3>
+                <p><strong>Year:</strong> 2018</p>
+                <p><strong>Color:</strong> White</p>
+                <p><strong><a href="#">Sarah Williams</a></strong> ⭐ 4.9</p>
+                <p>The Mercedes-Benz C-Class is a refined and stylish sedan featuring a 2.0L turbocharged engine,
+                    luxurious leather upholstery, and advanced driver assistance technologies. With a smooth ride and
+                    premium sound system, this car offers the perfect balance of performance and comfort.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/ford_mustang.jpg" alt="Form Mustang selling" loading="lazy">
+                <h3>Ford Mustang</h3>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Color:</strong> Grey</p>
+                <p><strong><a href="#">David Brown</a></strong> ⭐ 4.3</p>
+                <p>The Ford Mustang is an iconic muscle car featuring a 5.0L V8 engine delivering 450 HP. Its aggressive
+                    styling, thrilling engine roar, and dynamic performance make it a dream car for enthusiasts who love
+                    power and speed.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/chevrolet_camaro.jpg" alt="Yellow Chevrolet Camaro muscle car" loading="lazy">
+                <h3>Chevrolet Camaro</h3>
+                <p><strong>Year:</strong> 2023</p>
+                <p><strong>Color:</strong> Yellow</p>
+                <p><strong><a href="#">James Carter</a></strong> ⭐ 3.5</p>
+                <p>The Chevrolet Camaro is a legendary American muscle car with a 6.2L V8 engine pushing 455 HP. It
+                    delivers an exhilarating driving experience with aggressive styling and a driver-focused interior
+                    equipped with the latest technology.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/porsche_911.jpg" alt="Porsche 911 sport car" loading="lazy">
+                <h3>Porsche 911</h3>
+                <p><strong>Year:</strong> 2020</p>
+                <p><strong>Color:</strong> Silver</p>
+                <p><strong><a href="#">Robert Wilson</a></strong> ⭐ 2.1</p>
+                <p>The Porsche 911 is a legendary sports car with a rear-engine layout and a 3.0L twin-turbo flat-six
+                    engine delivering 443 HP. With its exceptional handling and timeless design, it’s the ultimate
+                    driving machine.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/honda_civic.jpg" alt="Honda Civic Type R" loading="lazy">
+                <h3>Honda Civic Type R</h3>
+                <p><strong>Year:</strong> 2019</p>
+                <p><strong>Color:</strong> White</p>
+                <p><strong><a href="#">Kevin Miller</a></strong> ⭐ 4.2</p>
+                <p>The Honda Civic Type R is a high-performance hatchback with a turbocharged 2.0L engine producing 306
+                    HP. With its aggressive design, sporty interior, and precise handling, it’s a favorite among
+                    enthusiasts.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/subaru.png" alt="Subaru WRX STI" loading="lazy">
+                <h3>Subaru WRX STI</h3>
+                <p><strong>Year:</strong> 2017</p>
+                <p><strong>Color:</strong> Blue</p>
+                <p><strong><a href="#">Andrew Scott</a></strong> ⭐ 4.7</p>
+                <p>The Subaru WRX STI is an all-wheel-drive performance sedan featuring a 2.5L turbocharged engine and
+                    rally-inspired handling. With its aggressive aerodynamics and sport-tuned suspension, it’s built for
+                    speed and control.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/lexus_rx.jpg" alt="Lexus RX 350 in city" loading="lazy">
+                <h3>Lexus RX 350</h3>
+                <p><strong>Year:</strong> 2022</p>
+                <p><strong>Color:</strong> Silver</p>
+                <p><strong><a href="#">Jessica Green</a></strong> ⭐ 5.0</p>
+                <p>The Lexus RX 350 is a luxury SUV with a 3.5L V6 engine, delivering a smooth and quiet ride. It offers
+                    premium interior materials, advanced safety features, and excellent reliability.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/nissan_gt_r.jfif" alt="Black Nissan GT-R parked on the street" loading="lazy">
+                <h3>Nissan GT-R</h3>
+                <p><strong>Year:</strong> 2015</p>
+                <p><strong>Color:</strong> White</p>
+                <p><strong><a href="#">Brian Adams</a></strong> ⭐ 3.7</p>
+                <p>The Nissan GT-R is a high-performance sports car with a twin-turbocharged 3.8L V6 engine producing
+                    565 HP. With all-wheel drive and incredible acceleration, it’s a true performance machine.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+
+            <article class="car-item">
+                <img src="/images/jaguar_f.jpg" alt="Jaguar F-type" loading="lazy">
+                <h3>Jaguar F-Type</h3>
+                <p><strong>Year:</strong> 2019</p>
+                <p><strong>Color:</strong> White</p>
+                <p><strong><a href="#">Emily Davis</a></strong> ⭐ 4.3</p>
+                <p>The Jaguar F-Type is a sleek and stylish sports car powered by a supercharged V6 engine. With its
+                    agile handling and luxurious interior, it delivers an exhilarating driving experience.</p>
+                <button class="contact-button">Contact the seller</button>
+            </article>
+        </div>
+    </section>
+</main>
+<script src="/js/searchCars.js"></script>
+<script src="/js/filtration.js"></script>
+<script src="/js/contactPopUp.js"></script>
+</body>
+</html>

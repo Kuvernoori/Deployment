@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="/css/signup.css">
+
+</head>
+<body>
+
+<main class="container">
+  <h1 class="text-center">Sign Up</h1>
+
+  <div id="message-container"></div>
+
+  <form action="/api/auth/signup" method="post" class="signup-form">
+    <input type="text" id = "name" name="username" placeholder="Username" class="btn">
+    <input type="email" id = "email" name="email" placeholder="Email" class="btn">
+    <input type="password" id = "password" name="password" placeholder="Password" class="btn">
+    <input type="password" id = "confirm-password" name="password_confirm" placeholder="Confirm Password" class="btn">
+    <button class="btn btn-success" type="submit">Sign Up</button>
+  </form>
+
+  <p>Already have an account? Please <a href="login.html">sign in</a>.</p>
+</main>
+
+<script src="/js/signup.js"></script>
+</body>
+</html>

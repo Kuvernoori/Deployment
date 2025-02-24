@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTrading</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo"><p><a href="withlogout.html">CarTrading</a></p></div>
+            <div class="search-box">
+                <input type="text" placeholder="Search cars...">
+                <button>🔍</button>
+            </div>
+        </div>
+        <div id="auth-container">
+            <ul class="nav-links">
+                <li><a href="/templates/cartrading/myAds.html">My Ads</a></li>
+                <li><a href="/templates/cartrading/profile.html">My Profile</a></li>
+                <li>
+                    <button onclick="location.href='/templates/index.html'" class="btn btn-primary">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="user-info-container">
+        <h2>Seller information</h2>
+        <div class="user-info">
+            <p><strong>Name:</strong> <span id="user-name">John Doe</span></p>
+            <p><strong>Gender:</strong> <span id="user-gender">Male</span></p>
+            <p><strong>Age:</strong> <span id="user-age">45</span></p>
+
+            <div class="user-reviews">
+                <h2>User reviews</h2>
+                <div id="reviews-container" class="reviews-list"></div>
+
+                <div class="add-review">
+                    <h3>Add a review</h3>
+                    <textarea id="review-text" placeholder="Write your review here..."></textarea>
+                    <label for="review-rating">Rating:</label> <br>
+                    <input type="number" id="review-rating">
+                    <button onclick="addReview()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="/js/reviews.js"></script>
+</body>
+</html>

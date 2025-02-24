@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTrading | Profile </title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo"><p><a href="withlogout.html">CarTrading</a></p></div>
+            <div class="search-box">
+                <input type="text" placeholder="Search cars...">
+                <button>🔍</button>
+            </div>
+        </div>
+        <div id="auth-container">
+            <ul class="nav-links">
+                <li><a href="/templates/cartrading/myAds.html">My Ads</a></li>
+                <li><a href="/templates/cartrading/profile.html">My Profile</a></li>
+                <li>
+                    <button onclick="location.href='/templates/index.html'" class="btn btn-primary">Log Out</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<div class="profile-container">
+    <H2>My profile</H2>
+    <p><span class="label">My name:</span> <span id="username">Loading...</span></p>
+    <button id="change-name-btn" class="change-btn">Change Name</button>
+    <div id="change-name-container" style="display: none;">
+        <input type="text" id="new-username" placeholder="Enter new name">
+        <button id="save-name-btn" class="save">Save Name</button>
+    </div>
+
+    <p><span class="label">My email:</span> <span id="email">Loading...</span></p>
+    <button id="change-email-btn" class="change-btn">Change Email</button>
+    <div id="change-email-container" style="display: none;">
+        <input type="email" id="new-email" placeholder="Enter new email">
+        <button id="save-email-btn" class="save">Save Email</button>
+    </div>
+
+    <p><span class="label">Gender:</span> <span id="display-gender">Loading...</span></p>
+    <p><span class="label">Age:</span> <span id="display-age">Loading...</span></p>
+
+    <p><span class="label">Password:</span> <span id="password">********</span></p>
+    <button id="change-password-btn" class="change-btn">Change Password</button>
+    <div id="change-password-container" style="display: none;">
+        <input type="password" id="current-password" placeholder="Current password">
+        <input type="password" id="new-password" placeholder="Enter new password">
+        <button id="save-password-btn" class="save">Save Password</button>
+    </div>
+
+    <div id="editable-info" style="display: none;">
+        <label for="gender-select">Gender:</label>
+        <select id="gender-select">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="age-input">Age:</label>
+        <input type="number" id="age-input" placeholder="Enter age" min="18" />
+    </div>
+
+    <button id="edit-btn" class="edit">Edit Information</button>
+    <button id="save-btn" class="edit" style="display: none;">Save Information</button>
+</div>
+<script src="/js/profile.js"></script>
+</body>
+</html>

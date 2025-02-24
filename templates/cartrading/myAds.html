@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarTrading | My Ads</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <div class="logo"><p><a href="withlogout.html">CarTrading</a></p></div>
+        </div>
+        <div id="auth-container">
+            <ul class="nav-links">
+                <li><a href="#">My Ads</a></li>
+                <li><a href="/templates/cartrading/profile.html">My Profile</a></li>
+                <li>
+                    <button type="button" onclick="location.href='/templates/index.html'" class="btn btn-primary">Log
+                        Out
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <section class="ads-container">
+        <h2>My Ads</h2>
+        <button type="button" onclick="openPopup()" class="btn-create-primary">Create Ad</button>
+        <div id="my-ads-list"></div>
+        <div id="ads-list" class="ads-list">
+            <p id="no-ads-text">No ads available</p>
+        </div>
+    </section>
+</main>
+
+<div id="popup" class="popup">
+    <h3 id="popup-title">Create Ad</h3>
+
+    <form id="adForm">
+        <label for="title">Car Title</label>
+        <input type="text" id="title" placeholder="Car Title" required>
+
+        <label for="year">Year</label>
+        <input type="number" id="year" placeholder="Year" required>
+
+        <label for="color">Color</label>
+        <input type="text" id="color" placeholder="Color" required>
+
+        <label for="description">Description</label>
+        <textarea id="description" placeholder="Description" required></textarea>
+
+        <label for="image">Upload Image</label>
+        <input type="file" id="image" accept="image/*" aria-label="Upload an image" required>
+
+        <div class="form-buttons">
+            <button type="button" class="btn" onclick="saveAd()">Save</button>
+            <button type="button" class="btn" onclick="closePopup()">Cancel</button>
+        </div>
+    </form>
+</div>
+
+<script src="/js/ads.js"></script>
+</body>
+</html>

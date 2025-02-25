@@ -1,8 +1,8 @@
- #CarTrading API
+# 🚀 CarTrading API
 CarTrading is a Node.js-based API for a car trading platform, supporting user authentication, car listing management, and search functionalities.
 
-##Features
--User authentication (JWT-based)
+## 🛠 Features
+- User authentication (JWT-based)
 
 -Car listing creation and management
 
@@ -12,26 +12,20 @@ CarTrading is a Node.js-based API for a car trading platform, supporting user au
 
 -Review system
 
-##Installation
+## ⚙️ Installation
 -Prerequisites
 -Node.js (>= 14.x)
 
 -MongoDB
 
-##Setup
+## 🎭 Setup
 Clone the repository:
 
 -`git clone https://github.com/Kuvernoori/Deployment`
 -`cd Deployment`
-##Install dependencies:
+## 🐙 Install dependencies:
 
--`npm install`
-##Create a .env file in the root directory and configure the following:
-
-`MONGO_URI=mongodb://localhost:27017/cartrading`
-`JWT_SECRET=your_secret_key`
-`PORT=5000`
-##Start the server:
+## Start the server:
 
 `node index.js`
 
